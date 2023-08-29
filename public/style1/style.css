@@ -1,1 +1,195 @@
- body{background-color: red;}
+ body{background-color: whitesmoke;
+}
+
+ header{
+    background-color: gray;
+ }
+ 
+ hgroup{
+   color: red;
+ }
+hgroup h1,h2{
+    padding-left: 400px;
+}
+ figure{
+    display: inline-block;
+ }
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+
+ header div {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+ }
+
+ h3{
+    border-bottom: solid rgba(160, 160, 160, 0.445);
+ }
+
+
+ h3::before {
+    content: ".";
+    color: red;
+    padding-right: 10px;
+    font-size: 100px;
+ }
+
+ /* .contact-type {
+    background-color: red;
+
+ } */
+
+#contact{
+    top:10px;
+    display: flex;
+    right: 0px;
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    height: 120px;
+    background-color: red;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.contact{
+    align-items: baseline;
+    margin: 0;
+    display: flex;
+
+}
+
+.contact-type{
+    background-color: red;
+    color: white;
+    width: 100px;
+
+}
+
+#contact h3 {
+    display: none;
+}
+
+.contact-value:nth-last-child(2) {
+    display: none;
+}
+
+a {
+    color : red;
+    text-decoration: none;
+    background-color: black;
+
+}
+
+.contact-value {
+    width: 807px;
+    background-color: black;
+    padding: 2.8px;
+}
+
+.experience-type::after{
+    content: "@";
+}
+
+.experience-type {
+    color: red;
+}
+.experience-institution{
+    color: red;
+}
+.experience-date-separator{
+    color: red;
+}
+.experience-location::before {
+    color: grey;
+    content: "In";
+}
+.experience-location {
+    color: grey;
+}
+.experience-date{
+    color: grey;
+}
+.month{
+    color: grey;
+}
+
+.experience-type{
+    color: red;
+
+}
+
+.experience-location::before{
+    color: grey;
+    content: 'In';
+}
+/* SKILL BAR */
+
+.skill{
+    background-color: rgb(202, 202, 202);
+    padding: 10px;
+    margin-bottom: 4px;
+    line-height: 2;
+    
+}
+.skills.skills-primary::before{
+    content: "Main";
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 0;
+    
+
+}
+
+.skill span{
+    margin-left: -8px;
+}
+.skills.skills-secondary::before{
+    content: "Other";
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+
+}
+.skill[data-skill="5"] span{
+    background-color: red;
+    width: 50%;
+    display: inline-block;
+}
+
+.skill[data-skill="3"] span{
+    background-color: red;
+    width: 30%;
+    display: inline-block;
+}
+
+
+.skill[data-skill="1"] span{
+    background-color: red;
+    width: 15%;
+    display: inline-block;
+    
+}
+
+.skill[data-skill="9"] span{
+    background-color: red;
+    width: 90%;
+    display: inline-block;
+}
+
+
+.skill[data-skill="7"] span{
+    background-color: red;
+    width: 70%;
+    display: inline-block;
+}
